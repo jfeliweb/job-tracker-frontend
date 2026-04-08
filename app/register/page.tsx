@@ -54,7 +54,7 @@ export default function RegisterPage() {
                 value={name}
                 onChange={e => setName(e.target.value)}
                 required
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full border text-gray-900 border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
@@ -67,7 +67,7 @@ export default function RegisterPage() {
                 value={email}
                 onChange={e => setEmail(e.target.value)}
                 required
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full text-gray-900 border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
@@ -81,7 +81,7 @@ export default function RegisterPage() {
                 onChange={e => setPassword(e.target.value)}
                 required
                 minLength={8}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full text-gray-900 border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 

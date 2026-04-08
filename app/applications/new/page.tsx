@@ -82,7 +82,7 @@ export default function NewApplicationPage() {
                   onChange={handleChange}
                   required
                   placeholder="Lead Software Engineer"
-                  className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full text-gray-900 border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               <div>
@@ -94,7 +94,7 @@ export default function NewApplicationPage() {
                   value={form.companyName}
                   onChange={handleChange}
                   placeholder="Royal Caribbean"
-                  className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full text-gray-900 border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
             </div>
@@ -109,7 +109,7 @@ export default function NewApplicationPage() {
                   name="status"
                   value={form.status}
                   onChange={handleChange}
-                  className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full text-gray-900 border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 >
                   {['APPLIED', 'INTERVIEW', 'OFFER', 'REJECTED', 'WITHDRAWN'].map(s => (
                     <option key={s} value={s}>
@@ -127,7 +127,7 @@ export default function NewApplicationPage() {
                   name="appliedDate"
                   value={form.appliedDate}
                   onChange={handleChange}
-                  className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full text-gray-900 border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
             </div>
@@ -143,7 +143,7 @@ export default function NewApplicationPage() {
                 value={form.jobUrl}
                 onChange={handleChange}
                 placeholder="https://careers.royalcaribbean.com/..."
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full text-gray-900 border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
 
@@ -158,7 +158,7 @@ export default function NewApplicationPage() {
                 onChange={handleChange}
                 rows={4}
                 placeholder="Interview prep notes, contacts, salary range..."
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                className="w-full text-gray-900 border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
               />
             </div>
 

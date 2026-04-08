@@ -178,7 +178,7 @@ export default function ApplicationDetailPage() {
                   <input
                     value={form.jobTitle}
                     onChange={e => setForm(p => ({ ...p, jobTitle: e.target.value }))}
-                    className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full text-gray-900 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
                 <div>
@@ -186,7 +186,7 @@ export default function ApplicationDetailPage() {
                   <input
                     value={form.companyName}
                     onChange={e => setForm(p => ({ ...p, companyName: e.target.value }))}
-                    className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full text-gray-900 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
               </div>
@@ -196,7 +196,7 @@ export default function ApplicationDetailPage() {
                   <select
                     value={form.status}
                     onChange={e => setForm(p => ({ ...p, status: e.target.value }))}
-                    className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full text-gray-900 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                   >
                     {['APPLIED', 'INTERVIEW', 'OFFER', 'REJECTED', 'WITHDRAWN'].map(s => (
                       <option key={s} value={s}>
@@ -211,7 +211,7 @@ export default function ApplicationDetailPage() {
                     type="date"
                     value={form.appliedDate}
                     onChange={e => setForm(p => ({ ...p, appliedDate: e.target.value }))}
-                    className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full text-gray-900 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
               </div>
@@ -221,7 +221,7 @@ export default function ApplicationDetailPage() {
                   value={form.notes}
                   onChange={e => setForm(p => ({ ...p, notes: e.target.value }))}
                   rows={4}
-                  className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                  className="w-full text-gray-900 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
                 />
               </div>
               <div className="flex gap-2">
@@ -336,7 +336,7 @@ export default function ApplicationDetailPage() {
                   value={reminderDate}
                   onChange={e => setReminderDate(e.target.value)}
                   min={new Date().toISOString().split('T')[0]}
-                  className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full text-gray-900 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               <div>
@@ -347,7 +347,7 @@ export default function ApplicationDetailPage() {
                   type="time"
                   value={reminderTime}
                   onChange={e => setReminderTime(e.target.value)}
-                  className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full text-gray-900 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
             </div>
@@ -360,7 +360,7 @@ export default function ApplicationDetailPage() {
                 value={reminderMessage}
                 onChange={e => setReminderMessage(e.target.value)}
                 placeholder="e.g. Follow up on application status"
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full text-gray-900 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
               />
             </div>
             <button
@@ -388,7 +388,7 @@ export default function ApplicationDetailPage() {
                 onChange={e => setJobDescription(e.target.value)}
                 rows={5}
                 placeholder="Paste the full job description here..."
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                className="w-full text-gray-900 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
               />
             </div>
             <button
@@ -416,7 +416,7 @@ export default function ApplicationDetailPage() {
                   value={coverLetter}
                   onChange={e => setCoverLetter(e.target.value)}
                   rows={12}
-                  className="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                  className="w-full text-gray-900 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
                 />
               </div>
             )}
