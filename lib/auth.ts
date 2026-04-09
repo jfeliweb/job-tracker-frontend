@@ -1,6 +1,17 @@
-export const getToken = () => localStorage.getItem('token')
-export const getName = () => localStorage.getItem('name')
-export const getEmail = () => localStorage.getItem('email')
+export const getToken = () => {
+  if (typeof window === 'undefined') return null
+  return localStorage.getItem('token')
+}
+
+export const getName = () => {
+  if (typeof window === 'undefined') return null
+  return localStorage.getItem('name')
+}
+
+export const getEmail = () => {
+  if (typeof window === 'undefined') return null
+  return localStorage.getItem('email')
+}
 
 export const saveAuth = (token: string, name: string, email: string) => {
   localStorage.setItem('token', token)
@@ -14,4 +25,7 @@ export const clearAuth = () => {
   localStorage.removeItem('email')
 }
 
-export const isLoggedIn = () => !!getToken()
+export const isLoggedIn = () => {
+  if (typeof window === 'undefined') return false
+  return !!localStorage.getItem('token')
+}
